@@ -20,6 +20,7 @@ const Hero: FC<HeroProps> = ({}) => {
                   alt=""
                   height={264}
                   width={612}
+                  priority
                   className="h-full w-full shadow-2xl"
                 />
                 <div className=" group-hover:animate-spin top-12 absolute h-16 1000px:top-14 1000px:left-4 1200px:top-20 1200px:left-6  ">
@@ -40,6 +41,7 @@ const Hero: FC<HeroProps> = ({}) => {
                   src={`/images/Marketplace_OP2.png`}
                   alt=""
                   height={264}
+                  priority
                   width={612}
                   className="h-full w-full shadow-2xl"
                 />
@@ -61,6 +63,7 @@ const Hero: FC<HeroProps> = ({}) => {
                   src={`/images/Marketplace_OP3.png`}
                   alt=""
                   height={264}
+                  priority
                   width={612}
                   className="h-full w-full shadow-2xl"
                 />
