@@ -34,13 +34,13 @@ const SignIn: FC<SignInProps> = ({}) => {
 
   return (
     <div className="w-screen flex min-h-screen bg-[#f9f9f9] font-Poppins">
-      <div className=" relative w-[526px] px-[72px] py-[80px] hidden md:h-screen text-white bg-slate-900 lg:flex flex-col justify-between items-center">
+      <div className=" relative w-[526px] px-[72px] py-[80px] hidden md:h-screen text-white bg-[url(/assets/handshake-img.png)] bg-center bg-cover lg:flex flex-col justify-between items-center">
         <div>
           <Link
             href="/"
             className={` text-white font-Poppins font-bold text-3xl`}
           >
-            Med<span className="text-primary">Verse</span>
+            Med<span className="text-gray-900">Verse</span>
           </Link>
         </div>
         <div className=" text-center">
@@ -53,8 +53,8 @@ const SignIn: FC<SignInProps> = ({}) => {
           </p>
         </div>
         <div className=" absolute top-44 right-[-100px]">
-          <div className=" flex flex-col items-center justify-center  p-6 rounded-md w-[409px] h-[188px]  shadow-md bg-gradient-to-r  from-gray-900 via-gray-900 to-gray-500 text-white">
-            <p className="text-white">
+          <div className=" flex flex-col items-center justify-center  p-6 rounded-md w-[409px] h-[188px]  shadow-md bg-transparent backdrop-blur-sm  text-white">
+            <p className="text-gray-900">
               Today, we create innovative solutions to the challenges that
               consumers face in both their everyday lives and events.
             </p>
