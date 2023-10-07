@@ -1,0 +1,280 @@
+import { FC } from "react";
+import { Button } from "./ui/Button";
+import {
+  ArrowLongRightIcon,
+  ArrowRightIcon,
+} from "@heroicons/react/24/outline";
+import {
+  AcademicCapIcon,
+  CircleStackIcon,
+  ClipboardDocumentIcon,
+} from "@heroicons/react/24/solid";
+import Image from "next/image";
+
+interface HeroProps {}
+
+const Hero: FC<HeroProps> = ({}) => {
+  return (
+    <div className="bg-white pt-10">
+      <div className="mx-auto max-w-2xl py-20 sm:py-30 lg:py-30">
+        <div className="mx-2 sm:mx-auto text-center">
+          <h1 className="text-4xl font-black tracking-tight font-Poppins text-gray-900 sm:text-6xl">
+            Elevating Health, Our Sole Focus is You!
+          </h1>
+          <p className="mt-6 text-lg leading-8">
+            we&apos;re dedicated to guiding you towards optimal health. With a
+            holistic approach, we provide services that encompass physical,
+            mental, and emotional wellness. Join us in making your well-being a
+            priority.
+          </p>
+          <div className="mt-10 flex flex-col space-y-3 sm:space-y-0 sm:flex-row  items-center justify-center gap-x-6">
+            <Button className=" flex whitespace-nowrap items-center text-base gap-3 rounded-full">
+              Get Started <ArrowRightIcon className=" rotate-45 w-5 h-5" />
+            </Button>
+            <div className="flex">
+              <div className="w-full flex items-center justify-center ">
+                <Image
+                  src={`/images/Group83.png`}
+                  alt=""
+                  height={100}
+                  width={100}
+                />
+                <p className=" ml-2 text-left text-xs">
+                  Join Others and get access <br /> to a whole new world
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* <!-- Image gallery --> */}
+      <div className=" px-3  max-w-7xl mx-auto w-full">
+        <div className="rounded-[35px] w-full ">
+          <Image
+            src={`/images/HeroImage.png`}
+            alt=""
+            height={500}
+            width={500}
+            className="h-full w-full"
+          />
+        </div>
+      </div>
+      {/* services we offer */}
+      <div className="mx-auto max-w-2xl py-20 sm:py-30 lg:py-30">
+        <div className="mx-2 sm:mx-auto text-center">
+          <h1 className="text-2xl font-black tracking-tight font-Poppins text-gray-900 sm:text-4xl">
+            Services We Provide
+          </h1>
+          <p className="mt-6 text-base leading-8">
+            At MedVerse, we&apos;re rewriting the way you experience medical
+            care. Our services are designed to empower you in every aspect of
+            your health journey
+          </p>
+        </div>
+      </div>
+      {/* services we offer cards */}
+      <div className=" lg:flex max-w-7xl px-3 font-Poppins space-y-6 lg:space-y-0 lg:space-x-6  mx-auto w-full items-center justify-between">
+        <div className=" p-6 rounded-[35px] flex shadow-md bg-gradient-to-br  from-gray-900 via-gray-900 to-gray-500 text-white max-h-max">
+          <div className=" mr-4">
+            <div className=" p-4 bg-white rounded-3xl">
+              <AcademicCapIcon className=" w-7 h-7 text-gray-900" />
+            </div>
+          </div>
+          <div>
+            <h1 className=" font-extrabold text-2xl mb-7">
+              Doctor’s Community
+            </h1>
+            <p className=" text-white">
+              Join a thriving community of medical experts on our platform,
+              fostering collaborative insights and expert advice that elevate
+              the standards of healthcare delivery.
+            </p>
+            <div className="mt-10 sm:flex items-center gap-x-6">
+              <Button className=" flex items-center shadow-lg border whitespace-nowrap border-white text-base gap-3 rounded-full">
+                Get Started <ArrowRightIcon className=" -rotate-45 w-5 h-5" />
+              </Button>
+            </div>
+          </div>
+        </div>
+        <div className=" p-6 flex rounded-[35px] shadow-md bg-gradient-to-br from-primary to-transparent  text-gray-900 min-h-max">
+          <div className=" mr-4">
+            <div className=" p-4 bg-white rounded-3xl">
+              <CircleStackIcon className=" w-7 h-7 text-primary " />
+            </div>
+          </div>
+          <div>
+            <h1 className=" font-extrabold text-2xl mb-7">Data Management</h1>
+            <p className="">
+              Effortlessly keep track of your health journey through our
+              comprehensive data management system, empowering you to monitor
+              progress, set goals, and make informed decisions for a healthier
+              life.
+            </p>
+            <div className="mt-10 sm:flex items-center gap-x-6">
+              <Button
+                variant={"ghost"}
+                className=" flex bg-white shadow-lg whitespace-nowrap text-primary items-center text-base gap-3 rounded-full"
+              >
+                Get Started <ArrowRightIcon className=" rotate-45 w-5 h-5" />
+              </Button>
+            </div>
+          </div>
+        </div>
+        <div className=" p-6 flex rounded-[35px] shadow-md bg-gradient-to-br  from-primary to-transparent  text-gray-900 min-h-max">
+          <div className=" mr-4">
+            <div className=" p-4 bg-white rounded-3xl">
+              <ClipboardDocumentIcon className=" w-7 h-7 text-primary " />
+            </div>
+          </div>
+          <div>
+            <h1 className=" font-extrabold text-2xl mb-7">
+              Prescription Refills
+            </h1>
+            <p className="">
+              Experience the convenience of prescription refills like never
+              before – with just a few taps, ensure a steady supply of
+              medications delivered to your doorstep, saving you time and
+              hassle.
+            </p>
+            <div className="mt-10 sm:flex items-center gap-x-6">
+              <Button
+                variant={"ghost"}
+                className=" flex bg-white shadow-lg whitespace-nowrap text-primary items-center text-base gap-3 rounded-full"
+              >
+                Get Started <ArrowRightIcon className=" rotate-45 w-5 h-5" />
+              </Button>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* About us */}
+      <div className=" px-3 mt-32 max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-12 gap-8">
+        <div className=" col-span-full md:col-span-4 rounded-lg">
+          <div className="rounded-[35px] w-full ">
+            <Image
+              src={`/images/HeroImage2.png`}
+              alt=""
+              height={500}
+              width={500}
+              className="h-full w-full"
+            />
+          </div>
+        </div>
+        <div className="col-span-full md:col-span-8">
+          <div className=" mb-8 flex items-center justify-between pb-2 border-b-2 border-gray-900">
+            <div>
+              <h1 className=" text-2xl font-black tracking-tight font-Poppins text-primary sm:text-4xl">
+                About MedVerse
+              </h1>
+              <p className="mt-2 text-lg leading-8">
+                Empowering You Through Better Health
+              </p>
+            </div>
+            <div>
+              <ArrowRightIcon className=" -rotate-45 w-12 h-12 text-primary" />
+            </div>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 pb-8 border-b-2 border-gray-900 ">
+            <div className="col-span-full md:col-span-1">
+              <div className=" py-3 text-center rounded-[35px] text-white font-semibold px-6 bg-gray-900">
+                Who is MedVerse
+              </div>
+              <p className=" mt-10 text-gray-700">
+                Medvise empowers your well-being through accessible,
+                high-quality medical consultation and data management services.
+                With our seamless blend of technology and expertise, we&apos;re
+                guiding you towards better health outcomes in this new era of
+                healthcare
+              </p>
+            </div>
+            <div className="col-span-full md:col-span-1">
+              <div className=" py-3 text-center rounded-[35px] text-white font-semibold px-6 bg-gray-900">
+                Our Mission
+              </div>
+              <p className=" mt-10 text-gray-700">
+                Our mission is to provide convenient, top-notch healthcare
+                consultation and data management services. We strive to empower
+                individuals with the resources they need to make informed
+                decisions about their health and lead fulfilling lives.
+              </p>
+            </div>
+          </div>
+
+          {/* Our Partners */}
+          <div className=" py-8 border-b-2 border-gray-900">
+            <div className="flex items-center justify-between">
+              <h1 className="text-3xl font-medium tracking-tight font-Poppins text-gray-900 sm:text-6xl">
+                Our Partners
+              </h1>
+              <div>
+                <ArrowRightIcon className=" rotate-45 w-12 h-12 text-primary" />
+              </div>
+            </div>
+          </div>
+          {/* Registered hospitals */}
+          <div className=" py-8 border-b-2 border-gray-900">
+            <div className="flex items-center justify-between">
+              <h1 className="text-3xl font-medium tracking-tight font-Poppins text-gray-900 sm:text-6xl">
+                Registered Hospitals
+              </h1>
+              <div>
+                <ArrowRightIcon className=" rotate-45 w-12 h-12 text-primary" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* call to action */}
+      <div className="my-32 mx-auto max-w-2xl py-20 sm:py-30 lg:py-30">
+        <div className=" relative flex flex-col items-center justify-center ">
+          <h1 className=" drop-shadow text-center uppercase font-extrabold text-base text-primary">
+            Your Well-Being, Our Priority
+          </h1>
+          <h1 className="text-4xl z-10 drop-shadow-lg tracking-wider text-center font-black font-Poppins text-gray-900 sm:text-6xl">
+            shaping a healthier tomorrow together.
+          </h1>
+          <div className="mt-10 ">
+            <Button className=" flex items-center text-base gap-3 rounded-full">
+              Get Started <ArrowRightIcon className=" rotate-45 w-5 h-5" />
+            </Button>
+          </div>
+          <div className="hidden md:block absolute -top-28 left-14">
+            <Image
+              src={`/images/Rectangle-52.png`}
+              alt=""
+              height={144}
+              width={138}
+            />
+          </div>
+          <div className="hidden md:block absolute -top-24 -right-8">
+            <Image
+              src={`/images/Rectangle-51.png`}
+              alt=""
+              height={144}
+              width={138}
+            />
+          </div>
+          <div className="hidden md:block absolute -bottom-24 -left-12">
+            <Image
+              src={`/images/Rectangle-50.png`}
+              alt=""
+              height={144}
+              width={138}
+            />
+          </div>
+          <div className="hidden md:block absolute -bottom-24 -right-8">
+            <Image
+              src={`/images/Rectangle-53.png`}
+              alt=""
+              height={144}
+              width={138}
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Hero;

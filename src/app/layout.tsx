@@ -5,7 +5,8 @@ import { Toaster } from "@/components/ui/Toast";
 
 const poppins = Poppins({
   subsets: ["latin"],
-  weight: "400",
+  weight: ["400", "500", "600", "700", "800", "900", "300", "200", "100"],
+  variable: "--font-Poppins",
 }); // Use Poppins font
 
 export default function RootLayout({

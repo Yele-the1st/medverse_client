@@ -4,7 +4,7 @@ import { BiLoaderAlt } from "react-icons/bi";
 import * as React from "react";
 
 const buttonVariants = cva(
-  "active:scale-95 inline-flex font-Poppins items-center justify-center rounded-md text-sm font-medium ring-offset-background transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-primary focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
+  "active:scale-95 inline-flex font-Poppins items-center justify-center rounded-[10px] text-sm font-medium ring-offset-background transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-primary focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50",
   {
     variants: {
       variant: {
@@ -19,8 +19,8 @@ const buttonVariants = cva(
       },
       size: {
         default: "h-10 px-6 py-4",
-        sm: "h-9 rounded-md px-3",
-        lg: "h-11 rounded-md px-8",
+        sm: "h-9 rounded-[10px] px-3",
+        lg: "h-11 rounded-[10px] px-8",
         icon: "h-10 w-10",
       },
     },

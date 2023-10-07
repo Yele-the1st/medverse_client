@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { Button, buttonVariants } from "./ui/Button";
-import { Bars3Icon } from "@heroicons/react/24/outline";
+import { Bars3Icon, ChevronDownIcon } from "@heroicons/react/24/outline";
 
 import SignOutButton from "./SignOutButton";
 import NavLinks from "./NavLinks";
@@ -13,10 +13,11 @@ const Navbar = () => {
   const [session, setSession] = useState<boolean>(false);
 
   const navLinks = [
-    { label: "Home", url: "/" },
+    { label: "Market place", url: "/" },
     { label: "Pricing", url: "/pricing" },
-    { label: "Contact us", url: "/contact-us" },
-    { label: "FAQs", url: "/contact-us" },
+    { label: "About", url: "/contact-us" },
+    { label: "Services", url: "/contact-us" },
+    { label: "Partnership", url: "/contact-us" },
   ];
 
   return (
@@ -29,15 +30,50 @@ const Navbar = () => {
           Med<span className="text-primary">Verse</span>
         </Link>
 
-        <div className=" hidden lg:flex">
-          <NavLinks navLinks={navLinks} />
+        <div className=" text-[14px] hidden lg:flex whitespace-nowrap items-center text-base font-Poppins text-gray-900">
+          <Link
+            href={navLinks[0].url}
+            className=" hover:text-primary mr-5 transition-colors duration-500"
+          >
+            {navLinks[0].label}
+          </Link>
+          <Link
+            href={navLinks[1].url}
+            className=" hover:text-primary mr-5 transition-colors duration-500"
+          >
+            {navLinks[1].label}
+          </Link>
+          <Link
+            href={navLinks[2].url}
+            className=" hover:text-primary mr-5 transition-colors duration-500"
+          >
+            {navLinks[2].label}
+          </Link>
+          <Link
+            href={navLinks[3].url}
+            className=" hover:text-primary flex items-center mr-5 transition-colors duration-500"
+          >
+            {navLinks[3].label}
+            <span>
+              <ChevronDownIcon className=" ml-1 w-4 h-4" />
+            </span>
+          </Link>
+          <Link
+            href={navLinks[4].url}
+            className=" hover:text-primary flex items-center ba mr-5 transition-colors duration-500"
+          >
+            {navLinks[4].label}
+            <span>
+              <ChevronDownIcon className=" ml-1 w-4 h-4" />
+            </span>
+          </Link>
         </div>
 
-        <div className="  md:hidden">
+        <div className=" lg:hidden">
           <Bars3Icon className=" h-7 w-7 stroke-[2]" />
         </div>
 
-        <div className=" hidden md:flex gap-4">
+        <div className=" hidden lg:flex gap-4">
           {session ? (
             <>
               <Link
@@ -52,7 +88,7 @@ const Navbar = () => {
             <>
               <Link
                 className={cn(
-                  buttonVariants({ variant: "outline" }),
+                  buttonVariants({ variant: "default" }),
                   "text-base whitespace-nowrap rounded-full"
                 )}
                 href={"/sign-in"}

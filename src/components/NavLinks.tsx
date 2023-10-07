@@ -12,7 +12,7 @@ interface NavLinksProps {
 
 const NavLinks: React.FC<NavLinksProps> = ({ navLinks }) => {
   return (
-    <div className="flex whitespace-nowrap items-center space-x-20 text-base font-Poppins text-gray-900 ">
+    <div className="flex whitespace-nowrap items-center space-x-10 text-base font-Poppins text-gray-900 ">
       {navLinks.map((link, index) => (
         <Link
           key={index}

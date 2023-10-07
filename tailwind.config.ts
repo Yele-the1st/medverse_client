@@ -16,9 +16,27 @@ const config: Config = {
       },
     },
     extend: {
+      boxShadow: {
+        custom:
+          "0px 2px 8px 0px rgba(0, 0, 0, 0.1), 0px 1px 0px 0px rgba(255, 255, 255, 0.3) inset",
+      },
       fontFamily: {
-        sans: ["var(--font-inter)", ...fontFamily.sans],
-        Poppins: ["Poppins", "sans-serif"],
+        Poppins: ["var(--font-Poppins)"],
+      },
+      screens: {
+        "400px": "400px",
+        "640px": "640px",
+        "700px": "700px",
+        "800px": "800px",
+        "900px": "900px",
+        "950px": "950px",
+        "1000px": "1000px",
+        "1050px": "1050px",
+        "1100px": "1100px",
+        "1150px": "1150px",
+        "1200px": "1200px",
+        "1300px": "1300px",
+        "1500px": "1500px",
       },
       colors: {
         primary: {
