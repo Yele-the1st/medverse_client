@@ -5,7 +5,7 @@ import Image from "next/image";
 
 interface LogoCloudProps {}
 
-const logo1 = "/assets/cadbury-logos-idLXUDZwMi.svg";
+const logo1 = "/assets/optimum-nutrition-inc-logos-idjEg084fz.svg";
 const logo2 = "/assets/green-life-energy-gle-logos-idyESTloyP.svg";
 const logo3 = "/assets/gsk-logos-idJKnhJLpP.svg";
 const logo4 = "/assets/merck-logos-ido0cuxynN.svg";
