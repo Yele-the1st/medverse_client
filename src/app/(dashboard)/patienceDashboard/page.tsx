@@ -1,8 +1,8 @@
-import Hero from "@/components/Hero";
+import Hero from "@/components/landingPage/Hero";
 import { Button } from "@/components/ui/Button";
 import { FC } from "react";
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import Footer from "@/components/landingPage/Footer";
 
 interface pageProps {}
 

@@ -5,7 +5,7 @@ interface FigModalProps {}
 
 const FigModal: FC<FigModalProps> = ({}) => {
   return (
-    <div className=" pointer-events-auto fixed top-0 right-0 bottom-0 left-0 z-10 bg-[rgba(0,0,0,0.6)] select-none box-border block  ">
+    <div className=" pointer-events-auto fixed top-0 right-0 bottom-0 left-0 z-[813] bg-[rgba(0,0,0,0.6)] select-none box-border block  ">
       <div className=" visible pointer-events-auto flex absolute items-center justify-center h-full w-full top-0 select-none box-border">
         <div className=" w-[424px] h-[704px] flex flex-col justify-between z-[100] relative max-h-[90vh] bg-[#191a1d] backdrop-blur-[32px] rounded-[16px] visible pointer-events-auto box-border select-none   ">
           <button className=" top-6 right-6 absolute cursor-pointer z-[100] opacity-[0.4] text-center">
@@ -32,7 +32,7 @@ const FigModal: FC<FigModalProps> = ({}) => {
             </svg>
           </button>
           <div className=" mt-[24px] mb-[16px] p-[24px] ">
-            <h2 className=" mb-1 text-[18px] leading-[24px] bg-white">
+            <h2 className=" mb-1 text-[18px] leading-[24px] text-white">
               New in Janquin
             </h2>
             <div className=" text-[12px] leading-[16px] text-[rgb(214,128,255)]">
@@ -280,12 +280,14 @@ const FigModal: FC<FigModalProps> = ({}) => {
               </div>
             </div>
           </div>
-          <div className=" py-4 px-6 border-t border-[rgba(255,255,255,.05)] shadow-[0,0,64px,#191a1d] flex flex-shrink items-center justify-between gap-1 ">
+          <div className=" py-6 px-6 border-t border-[rgba(255,255,255,.05)] shadow-[0,0,64px,#191a1d] flex flex-shrink items-center justify-between gap-1 ">
             <p className=" text-[12px] leading-4 margin-0 ">
               <Link
                 href={``}
                 className=" text-[12px] leading-4 py-2 px-4 h-6 rounded-[8px] bg-[rgb(145,94,255)] text-white font-normal pl-3 pr-3 shadow-[inset,0,0,0,1px,rgba(255,255,255,.1)] "
-              ></Link>
+              >
+                Skip
+              </Link>
             </p>
           </div>
         </div>

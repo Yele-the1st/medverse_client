@@ -31,16 +31,18 @@ const LogoCloud: FC<LogoCloudProps> = ({}) => {
 
   return (
     <div className="">
-      <div className="my-10 relative font-bold container max-w-[1303px] mx-auto w-full md:text-center text-start text-4xl md:text-5xl text-gray-900 ">
-        <div className="relative">
+      <div className="my-10 relative max-w-max container mx-auto w-full  ">
+        <div>
           <Image
             src={`/assets/Vector.svg`}
             alt="SVG Image"
             height={120}
             width={120}
-            className="absolute animate-spin transition-all ease-in-out top-[-20px] left-[230px] h-20"
+            className="absolute animate-spin transition-all ease-in-out top-[-20px] left-0 h-20"
           />
-          <p className="relative z-10">Where Innovation Meets Trust</p>
+          <p className="relative font-bold text-3xl md:text-5xl text-gray-900 text-center sm:text-start z-10">
+            Where Innovation Meets Trust
+          </p>
         </div>
       </div>
       <section
