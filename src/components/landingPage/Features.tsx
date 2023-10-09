@@ -62,7 +62,7 @@ const Features: FC<FeaturesProps> = ({}) => {
           className="absolute animate-spin transition-all ease-in-out top-[-20px] right-0 h-20"
         />
 
-        <h1 className="relative font-bold text-3xl md:text-5xl text-gray-900 text-center sm:text-start z-10">
+        <h1 className="relative drop-shadow-lg font-bold text-3xl md:text-5xl text-gray-900 text-center sm:text-start z-10">
           What we bring to You
         </h1>
       </div>

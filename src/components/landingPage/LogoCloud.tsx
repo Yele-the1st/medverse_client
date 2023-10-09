@@ -40,7 +40,7 @@ const LogoCloud: FC<LogoCloudProps> = ({}) => {
             width={120}
             className="absolute animate-spin transition-all ease-in-out top-[-20px] left-0 h-20"
           />
-          <p className="relative font-bold text-3xl md:text-5xl text-gray-900 text-center sm:text-start z-10">
+          <p className="relative drop-shadow-lg font-bold text-3xl md:text-5xl text-gray-900 text-center sm:text-start z-10">
             Where Innovation Meets Trust
           </p>
         </div>

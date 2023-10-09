@@ -14,7 +14,7 @@ const FeaturesCard: FC<FeaturesCardProps> = ({
   features,
 }) => {
   return (
-    <div className=" hover:shadow-lg cursor-pointer group h-[20rem] bg-[#eceff1] rounded-[0.75rem] flex flex-col justify-between items-end p-[1.5rem] relative overflow-hidden">
+    <div className=" shadow-lg cursor-pointer group h-[20rem] bg-[#eceff1] rounded-[0.75rem] flex flex-col justify-between items-end p-[1.5rem] relative overflow-hidden">
       <Image
         src={image}
         alt=""

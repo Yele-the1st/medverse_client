@@ -17,7 +17,7 @@ const Stats: FC<StatsProps> = ({}) => {
               width={120}
               className="absolute animate-spin transition-all ease-in-out bottom-[-15px] right-32 lg:right-48 h-20"
             />
-            <div className=" mb-8 z-10 relative flex text-4xl md:text-5xl lg:text-6xl italic font-bold items-center justify-between pb-2 ">
+            <div className=" mb-8 z-10 drop-shadow-lg relative flex text-4xl md:text-5xl lg:text-6xl italic font-bold items-center justify-between pb-2 ">
               Growing Beyond <br /> Boundaries,
               <br /> Watch Us
             </div>

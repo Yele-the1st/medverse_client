@@ -9,7 +9,7 @@ const Hero: FC<HeroProps> = ({}) => {
       <div className=" py-20 sm:py-30 lg:py-30 md:pb-[340px]">
         <div className=" container max-w-[1303px] mx-auto w-full flex">
           <div className=" transition-all duration-300 ease-in-out relative w-full h-full">
-            <h1 className=" font-black tracking-tight font-Poppins italic text-[70px] leading-[80.5px] text-gray-900 1000px:text-[100px] 1000px:leading-[125.5px] 1050px:text-[110px] 1050px:leading-[135.5px] 1150px:text-[120px] 1150px:leading-[135.5px] 1200px:text-[120px] 1200px:leading-[135.5px] 1300px:text-[134px] 1300px:leading-[145.5px]">
+            <h1 className=" drop-shadow-lg font-black tracking-tight font-Poppins italic text-[70px] leading-[80.5px] text-gray-900 1000px:text-[100px] 1000px:leading-[125.5px] 1050px:text-[110px] 1050px:leading-[135.5px] 1150px:text-[120px] 1150px:leading-[135.5px] 1200px:text-[120px] 1200px:leading-[135.5px] 1300px:text-[134px] 1300px:leading-[145.5px]">
               Your one <br /> and Only <br />
               <strong className=" text-primary">Medical</strong> Hub
             </h1>
